@@ -1,6 +1,6 @@
 # abroarch-poc
 
-> My dazzling Nuxt.js project
+hosted [here](https://abroarch-poc.netlify.app/).
 
 ## Build Setup
 
