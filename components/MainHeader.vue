@@ -5,9 +5,7 @@
                 <span class="header-logo-text">Abroarch</span>
             </div>
             <div class="header-menuWrapper">
-                <div class="header-menu">test1</div>
-                <div class="header-menu">test2</div>
-                <div class="header-menu">test3</div>
+                <a href="https://studio.creww.me/projects/22/" class="header-menu">Project Info</a>
             </div>
         </div>
     </div>
@@ -26,7 +24,8 @@ $header-textColor: #555;
     left: 0;
     width: 100%;
     height: 80px;
-    background: rgba($color: white, $alpha: 0.7);
+    background: white;
+    z-index: 1;
 }
 
 .header {
@@ -65,9 +64,10 @@ $header-textColor: #555;
     }
 
     &-menu {
-        font-size: 15pt;
+        text-decoration: none;
+        font-size: 14pt;
         color: $header-textColor;
-        margin: 0 15px;
+        margin: 0 25px;
     }
 
     &-menu:hover {

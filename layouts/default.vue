@@ -1,10 +1,20 @@
 <template>
   <div>
-    <nuxt />
+    <main-header></main-header>
+    <nuxt style="margin-top: 80px;"/>
   </div>
 </template>
+<script>
+import MainHeader from '~/components/MainHeader.vue'
 
-<style>
+export default {
+  components: {
+    MainHeader
+  }
+}
+</script>
+<style lang="scss">
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
