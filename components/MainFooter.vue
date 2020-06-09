@@ -22,7 +22,7 @@ $primaryDark: #0068bf;
 }
 
 .content {
-    width: 1100px;
+    max-width: 1100px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
