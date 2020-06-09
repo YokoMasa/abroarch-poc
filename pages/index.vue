@@ -5,7 +5,7 @@
 
       <div class="hero-imageOverlay">
         <div class="hero-message">
-          訴求メッセージ
+          キャッチコピー
         </div>
         <a href="#form" class="hero-contactButton">事前登録</a>
       </div>
@@ -14,28 +14,30 @@
 
     <div class="serviceOverview">
       <div class="content">
-        <h1>こんな課題ありませんか？</h1>
+        <h1>Abroarchでできること</h1>
       </div>
     </div>
 
     <div class="serviceOverview" style="background: #ddd">
       <div class="content">
-        <h1>このサービスで何ができるの？</h1>
+        <h1>Abroarchの特徴（既存ソリューションには無い強み）</h1>
       </div>
     </div>
 
-    <div class="serviceOverview">
-      <div class="content">
-        <h1>サービス詳細</h1>
-      </div>
-    </div>
-
-    <div id="form" class="serviceOverview" style="background: #ddd">
+    <div id="form" class="serviceOverview">
       <div class="content">
         <h1>事前登録フォーム</h1>
         google formsでメールアドレス入力？
       </div>
     </div>
+
+    <div class="serviceOverview" style="background: #ddd">
+      <div class="content">
+        <h1>Creww協賛について</h1>
+        不要？
+      </div>
+    </div>
+
   </div>
 </template>
 
