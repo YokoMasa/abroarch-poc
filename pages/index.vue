@@ -7,23 +7,41 @@
         <div class="hero-message">
           訴求メッセージ
         </div>
-        <a href="#" class="hero-contactButton">事前登録</a>
+        <a href="#form" class="hero-contactButton">事前登録</a>
       </div>
 
-      <div class="serviceOverview">
+    </div>
 
+    <div class="serviceOverview">
+      <div class="content">
+        <h1>こんな課題ありませんか？</h1>
+      </div>
+    </div>
+
+    <div class="serviceOverview" style="background: #ddd">
+      <div class="content">
+        <h1>このサービスで何ができるの？</h1>
+      </div>
+    </div>
+
+    <div class="serviceOverview">
+      <div class="content">
+        <h1>サービス詳細</h1>
+      </div>
+    </div>
+
+    <div id="form" class="serviceOverview" style="background: #ddd">
+      <div class="content">
+        <h1>事前登録フォーム</h1>
+        google formsでメールアドレス入力？
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import MainHeader from '~/components/MainHeader.vue'
-
 export default {
-  components: {
-    MainHeader
-  }
+ 
 }
 </script>
 
@@ -31,6 +49,20 @@ export default {
 $primary: #2195f2;
 $primaryLight: #6ec5ff;
 $primaryDark: #0068bf;
+
+.content {
+  max-width: 1100px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero {
   position: relative;
@@ -59,7 +91,6 @@ $primaryDark: #0068bf;
   &-message {
     word-break: break-all;
     max-width:400px; 
-    color: #555;
     font-size: 35pt;
     font-weight: 600;
     margin-bottom: 30px;
@@ -82,7 +113,6 @@ $primaryDark: #0068bf;
 }
 
 .serviceOverview {
-  background: $primaryLight;
-  height: 700px;
+  height: 600px;
 }
 </style>

@@ -5,7 +5,7 @@
                 <span class="header-logo-text">Abroarch</span>
             </div>
             <div class="header-menuWrapper">
-                <a href="https://studio.creww.me/projects/22/" class="header-menu">Project Info</a>
+                <a href="https://studio.creww.me/projects/22/" class="header-menu" target="_blank">プロジェクトについて</a>
             </div>
         </div>
     </div>
@@ -65,7 +65,8 @@ $header-textColor: #555;
 
     &-menu {
         text-decoration: none;
-        font-size: 14pt;
+        font-size: 12pt;
+        font-weight: 600;
         color: $header-textColor;
         margin: 0 25px;
     }

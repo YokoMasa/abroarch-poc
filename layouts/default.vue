@@ -2,14 +2,16 @@
   <div>
     <main-header></main-header>
     <nuxt style="margin-top: 80px;"/>
+    <main-footer></main-footer>
   </div>
 </template>
 <script>
 import MainHeader from '~/components/MainHeader.vue'
+import MainFooter from '~/components/MainFooter.vue'
 
 export default {
   components: {
-    MainHeader
+    MainHeader, MainFooter
   }
 }
 </script>
@@ -25,6 +27,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: #555;
 }
 
 *,
