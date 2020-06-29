@@ -57,28 +57,51 @@
     <div class="plans" style="background: #eee">
       <div class="content">
         <div class="headline">サービス形態</div>
-        <p>xxx</p>
+        <p>お探しの情報に合わせて構築済みレポートのご提供、カスタム調査によるレポートのご提供をご選びいただけます。</p>
         <div class="plansWrapper">
+
           <div class="plan">
-            <p class="plan-name">構築済みレポートの提供</p>
+            <img class="plan-image" src="~/assets/premade.png">
+            <div class="plan-name">構築済みレポートの提供</div>
+            <div class="plan-description">
+              <ul>
+                <li>基本統計情報</li>
+                <li>規制情報</li>
+                <li>投資環境</li>
+                <li>業界概要</li>
+                <li>業界プレイヤー等...</li>
+              </ul>
+            </div>
           </div>
+
           <div class="plan">
-            <p class="plan-name">カスタムレポートの提供</p>
+            <img class="plan-image" src="~/assets/custommade.png">
+            <div class="plan-name">カスタムレポートの提供</div>
+            <div class="plan-description">
+              <ul>
+                <li>ご希望の海外ビジネス情報をカスタムレポートとしてご提供いたします。</li>
+              </ul>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
 
     <div class="serviceOverview">
       <div class="content">
-        <div class="headline">Abroarchの特徴（既存ソリューションには無い強み）</div>
+        <div class="headline">Abroarchの特徴</div>
+        <p>海外ビジネスに関する初期的情報を安価に提供可能</p>
       </div>
     </div>
 
-    <div id="form" class="serviceOverview" style="background: #eee">
+    <div id="form" class="preRegisterForm" style="background: #eee">
       <div class="content">
         <div class="headline">事前登録フォーム</div>
         <p>google formsでメールアドレス入力？</p>
+        <div class="googleFormWrapper">
+          <iframe class="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSeryc4vFa8mBoSHSPb08ez39A3KlZES0tLsMBCtMiUREaa2gg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
       </div>
     </div>
 
@@ -104,8 +127,9 @@ $primaryLight: #6ec5ff;
 $primaryDark: #0068bf;
 
 p {
-  font-size: 15pt;
-  font-weight: 600;
+  color: #555;
+  font-size: 13pt;
+  font-weight: 400;
 }
 
 .content {
@@ -124,10 +148,9 @@ p {
 
 .headline {
   display: inline-block;
-  margin: 20px 0;
-  font-size: 20pt;
+  margin: 20px 0 10px 0;
+  font-size: 23pt;
   font-weight: 700;
-  border-bottom: solid 3px #555 ;
 }
 
 .issueList {
@@ -158,7 +181,7 @@ p {
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-color: transparent $primary transparent transparent;
+    border-color: transparent $primaryDark transparent transparent;
     border-width: 10px 20px 10px 0;
   }
 
@@ -169,7 +192,7 @@ p {
     width: 380px;
     height: 60px;
     border-radius: 10px;
-    background: $primary;
+    background: $primaryDark;
     color: white;
   }
 }
@@ -212,13 +235,13 @@ p {
     font-size: 14pt;
     font-weight: 600;
     padding: 10px 50px;
-    background: $primary;
+    background: $primaryDark;
     border-radius: 30px;
     transition: background 0.2s;
   }
 
   &-contactButton:hover {
-    background: $primaryLight;
+    background: $primary;
   }
 }
 
@@ -232,17 +255,52 @@ p {
 
 .plan {
   width: 300px;
-  height: 300px;
-  background: $primary;
-  border-radius: 30px;
+  height: 330px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px #555;
 
-  &-name {
-    font-size: 14pt;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid white;
+  &-image {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 25px 0;
   }
 
+  &-name {
+    font-weight: 600;
+    font-size: 16pt;
+    color: $primaryDark;
+    margin-bottom: 5px;
+  }
+
+  &-description {
+    width: 80%;
+    font-size: 11pt;
+  }
+
+  &-description li {
+    list-style: '✔ ';
+  }
+}
+
+.googleFormWrapper {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleForm {
+  width: 650px;
+  height: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .serviceOverview {
@@ -250,7 +308,11 @@ p {
 }
 
 .plans {
-  height: 500px;
+  height: 550px;
+}
+
+.preRegisterForm {
+  height: 1300px;
 }
 
 

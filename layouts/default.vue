@@ -26,7 +26,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #555;
+  color: #333;
 }
 
 *,

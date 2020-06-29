@@ -16,7 +16,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-$header-textColor: #555;
+$header-textColor: #333;
 
 .headerWrapper {
     position: fixed;
