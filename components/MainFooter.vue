@@ -1,7 +1,9 @@
 <template>
     <div class="footerWrapper">
        <div class="content">
-           <h1>footer</h1>
+           <small>
+               Copyright &#169; 2020 Abroarch
+            </small>
        </div>
     </div>
 </template>
@@ -16,8 +18,9 @@ $primaryLight: #6ec5ff;
 $primaryDark: #0068bf;
 
 .footerWrapper {
-    height: 300px;
-    background: $primary;
+    height: 40px;
+    padding: 5px;
+    background: $primaryDark;
     color: white;
 }
 
@@ -26,5 +29,7 @@ $primaryDark: #0068bf;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: flex-end;
 }
 </style>

@@ -5,7 +5,7 @@
                 <span class="header-logo-text">Abroarch</span>
             </div>
             <div class="header-menuWrapper">
-                <a href="https://studio.creww.me/projects/22/" class="header-menu" target="_blank">プロジェクトについて</a>
+                <!--<a href="https://studio.creww.me/projects/22/" class="header-menu" target="_blank">プロジェクトについて</a>-->
             </div>
         </div>
     </div>
@@ -26,6 +26,7 @@ $header-textColor: #333;
     height: 80px;
     background: white;
     z-index: 1;
+    box-shadow: 1px 1px 5px #999;
 }
 
 .header {

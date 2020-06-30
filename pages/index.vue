@@ -5,24 +5,48 @@
 
       <div class="hero-imageOverlay">
         <div class="hero-message">
-          キャッチコピー
+          海外アプローチを簡単に
         </div>
         <a href="#form" class="hero-contactButton">事前登録</a>
       </div>
 
     </div>
 
+     <div class="strengthOverview">
+      <div class="content">
+        <!--<div class="headline">Abroarchの特徴</div>-->
+        <div class="strength">
+          <div class="strength-headline">
+            <span class="strength-emph">海外ビジネス</span>
+            に関する
+            <span class="strength-emph">初期的情報</span>
+            を
+            <span class="strength-emph">安価</span>
+            に取得可能
+          </div>
+          <div class="strength-description">
+            <p>
+              現在、海外の一般的な情報は簡単にインターネットで取得することが出来ます。
+            </p>
+            <p>しかし、一歩踏み込んで業界プレイヤー・規制情報・投資環境等の情報を取得しようとした時にインターネットでは簡単に情報を取得することができません。</p>
+            <p>また、専門の調査会社やコンサルタントに依頼をすると高額な費用がかかってしまい、海外ビジネス検討における初期的情報の収集には利用が難しいです。</p>
+            <p>Abroachはそのような課題を解決すること目的としています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="serviceOverview">
       <div class="content">
         <div class="headline">Abroarchでできること</div>
-        <p>様々なニーズに応じた海外ビジネス情報を得ることができます。</p>
+        <p>様々なニーズに応じた海外ビジネス情報を取得することができます。</p>
 
         <div class="issueList">
 
           <div class="issue">
             <img class="issue-person" src="~/assets/person.png">
             <div class="speach">
-              <div class="speach-bubble">開拓を検討中の海外市場に関する情報が欲しい</div>
+              <div class="speach-bubble">開拓を検討中の海外市場で競合となるプレイヤーが知りたい</div>
             </div>
           </div>
 
@@ -36,14 +60,14 @@
            <div class="issue">
             <img class="issue-person" src="~/assets/person.png">
             <div class="speach">
-              <div class="speach-bubble">xxx</div>
+              <div class="speach-bubble">海外市場に投入しようとしている商品に関する規制について知りたい</div>
             </div>
           </div>
 
            <div class="issue">
             <img class="issue-person" src="~/assets/person.png">
             <div class="speach">
-              <div class="speach-bubble">xxx</div>
+              <div class="speach-bubble">海外企業の買収を検討しており、資本規制について知りたい</div>
             </div>
           </div>
 
@@ -54,15 +78,15 @@
       </div>
     </div>
 
-    <div class="plans" style="background: #eee">
+    <div class="plans">
       <div class="content">
         <div class="headline">サービス形態</div>
-        <p>お探しの情報に合わせて構築済みレポートのご提供、カスタム調査によるレポートのご提供をご選びいただけます。</p>
+        <p>お探しの情報に合わせて構築済みレポート、カスタム調査によるレポートをご選びいただけます。</p>
         <div class="plansWrapper">
 
           <div class="plan">
             <img class="plan-image" src="~/assets/premade.png">
-            <div class="plan-name">構築済みレポートの提供</div>
+            <div class="plan-name">構築済みレポート</div>
             <div class="plan-description">
               <ul>
                 <li>基本統計情報</li>
@@ -76,7 +100,7 @@
 
           <div class="plan">
             <img class="plan-image" src="~/assets/custommade.png">
-            <div class="plan-name">カスタムレポートの提供</div>
+            <div class="plan-name">カスタムレポート</div>
             <div class="plan-description">
               <ul>
                 <li>ご希望の海外ビジネス情報をカスタムレポートとしてご提供いたします。</li>
@@ -88,27 +112,13 @@
       </div>
     </div>
 
-    <div class="serviceOverview">
+    <div id="form" class="preRegisterForm">
       <div class="content">
-        <div class="headline">Abroarchの特徴</div>
-        <p>海外ビジネスに関する初期的情報を安価に提供可能</p>
-      </div>
-    </div>
-
-    <div id="form" class="preRegisterForm" style="background: #eee">
-      <div class="content">
-        <div class="headline">事前登録フォーム</div>
-        <p>google formsでメールアドレス入力？</p>
+        <div class="headline">事前登録</div>
+        <p>現在当サービスは開発中です。以下よりご登録頂いた企業様にサービスの開発の状況等を共有いたします。</p>
         <div class="googleFormWrapper">
           <iframe class="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSeryc4vFa8mBoSHSPb08ez39A3KlZES0tLsMBCtMiUREaa2gg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
         </div>
-      </div>
-    </div>
-
-    <div class="serviceOverview">
-      <div class="content">
-        <div class="headline">Creww協賛について</div>
-        <p>不要？</p>
       </div>
     </div>
 
@@ -223,7 +233,7 @@ p {
 
   &-message {
     word-break: break-all;
-    max-width:400px; 
+    max-width: 700px; 
     font-size: 35pt;
     font-weight: 600;
     margin-bottom: 30px;
@@ -273,7 +283,7 @@ p {
 
   &-name {
     font-weight: 600;
-    font-size: 16pt;
+    font-size: 17pt;
     color: $primaryDark;
     margin-bottom: 5px;
   }
@@ -285,6 +295,36 @@ p {
 
   &-description li {
     list-style: '✔ ';
+  }
+}
+
+.strength {
+  margin-top: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-headline {
+    font-size: 22pt;
+  }
+
+  &-emph {
+    font-size: 28pt;
+    font-weight: 700;
+    color: $primaryDark;
+  }
+
+  &-description {
+    width: 650px;
+    text-align: center;
+
+    & p {
+      font-size: 12pt;
+      margin: 15px 0;
+    }
+
   }
 }
 
@@ -304,6 +344,7 @@ p {
 }
 
 .serviceOverview {
+  background-color: #eee;
   height: 400px;
 }
 
@@ -311,7 +352,12 @@ p {
   height: 550px;
 }
 
+.strengthOverview {
+  height: 430px;
+}
+
 .preRegisterForm {
+  background-color: #eee;
   height: 1300px;
 }
 
