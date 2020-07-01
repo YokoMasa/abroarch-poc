@@ -209,7 +209,7 @@ p {
     padding: 10px;
     display: flex;
     align-items: center;
-    width: 380px;
+    max-width: 380px;
     height: 60px;
     border-radius: 10px;
     background: $primaryDark;
@@ -388,7 +388,7 @@ p {
 
 .speach {
   &-bubble {
-    width: 300px;
+    max-width: 300px;
     height: 50px;
     border-radius: 5px;
     font-size: 10pt;
@@ -453,7 +453,6 @@ p {
   align-items: center;
 
   &-bubble {
-    max-width: 350px;
     height: 40px;
     border-radius: 5px;
     font-size: 9pt;
