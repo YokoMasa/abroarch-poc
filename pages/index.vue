@@ -24,6 +24,15 @@
             <span class="strength-emph">安価</span>
             に取得可能
           </div>
+          <div class="sp-strength-headline">
+            <span class="strength-emph">海外ビジネス</span>
+            に関する
+            <span class="strength-emph">初期的情報</span>
+            <br>
+            を
+            <span class="strength-emph">安価</span>
+            に取得可能
+          </div>
           <div class="strength-description">
             <p>
               現在、海外の一般的な情報は簡単にインターネットで取得することが出来ます。
@@ -144,6 +153,7 @@ p {
 
 .content {
   max-width: 1100px;
+  padding: 0 20px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -298,6 +308,12 @@ p {
   }
 }
 
+.sp-strength-headline {
+  display: none;
+  font-size: 12pt;
+  text-align: center;
+}
+
 .strength {
   margin-top: 15px;
   height: 100%;
@@ -308,6 +324,7 @@ p {
 
   &-headline {
     font-size: 22pt;
+    text-align: center;
   }
 
   &-emph {
@@ -317,7 +334,7 @@ p {
   }
 
   &-description {
-    width: 650px;
+    max-width: 650px;
     text-align: center;
 
     & p {
@@ -361,5 +378,88 @@ p {
   height: 1300px;
 }
 
+@media(max-width: 1050px) {
+.issue {
+  &-person {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.speach {
+  &-bubble {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 10pt;
+  }
+}
+}
+
+@media(max-width: 860px) {
+p {
+  font-size: 10pt;
+}
+
+.headline {
+  margin: 20px 0 10px 0;
+  font-size: 16pt;
+}
+
+.sp-strength-headline {
+  display: block;
+}
+
+.strengthOverview {
+  height: 330px;
+}
+
+.strength {
+  &-headline {
+    display: none;
+  }
+
+  &-emph {
+    font-size: 17pt;
+  }
+
+  &-description {
+    max-width: 500px;
+    text-align: center;
+
+    & p {
+      font-size: 9pt;
+    }
+  }
+}
+
+.issueList {
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.issue {
+  margin: 7px 0;
+
+  &-person {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.speach {
+  display: flex;
+  align-items: center;
+
+  &-bubble {
+    max-width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 9pt;
+  }
+}
+
+}
 
 </style>
