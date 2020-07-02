@@ -77,4 +77,18 @@ $header-textColor: #333;
         cursor: pointer;
     }
 }
+
+@media(max-width: 860px) {
+.headerWrapper {
+  height: 50px;
+}
+
+.header-logo {
+  width: 140px;
+
+  &-text {
+    font-size: 14pt;
+  }
+}
+}
 </style>

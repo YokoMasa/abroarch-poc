@@ -1,7 +1,7 @@
 <template>
   <div>
     <main-header></main-header>
-    <nuxt style="margin-top: 80px;"/>
+    <nuxt class="main"/>
     <main-footer></main-footer>
   </div>
 </template>
@@ -63,5 +63,15 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.main {
+  margin-top: 80px;
+}
+
+@media(max-width: 860px) {
+.main {
+  margin-top: 50px;
+} 
 }
 </style>

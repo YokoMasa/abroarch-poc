@@ -405,6 +405,23 @@ p {
   font-size: 10pt;
 }
 
+.hero {
+  height: 300px;
+
+  &-message {
+    max-width: 340px; 
+    font-size: 20pt;
+  }
+
+  &-contactButton {
+    font-size: 11pt;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-radius: 30px;
+  }
+
+}
+
 .headline {
   margin: 20px 0 10px 0;
   font-size: 16pt;
@@ -464,19 +481,12 @@ p {
 
 .plansWrapper {
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .plan {
   max-width: 400px;
   height: 160px;
   margin-top: 10px;
-  justify-content: start;
-  align-items: center;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 1px 2px 5px #555;
 
   &-header {
     flex-direction: row;
@@ -489,20 +499,13 @@ p {
   }
 
   &-name {
-    font-weight: 600;
     font-size: 13pt;
-    color: $primaryDark;
-    margin-bottom: 5px;
   }
 
   &-description {
-    width: 80%;
     font-size: 9pt;
   }
 
-  &-description li {
-    list-style: '✔ ';
-  }
 }
 
 .googleFormWrapper {
