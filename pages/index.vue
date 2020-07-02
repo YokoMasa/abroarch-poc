@@ -17,21 +17,17 @@
         <!--<div class="headline">Abroarchの特徴</div>-->
         <div class="strength">
           <div class="strength-headline">
-            <span class="strength-emph">海外ビジネス</span>
-            に関する
-            <span class="strength-emph">初期的情報</span>
-            を
-            <span class="strength-emph">安価</span>
-            に取得可能
-          </div>
-          <div class="sp-strength-headline">
-            <span class="strength-emph">海外ビジネス</span>
-            に関する
-            <span class="strength-emph">初期的情報</span>
-            <br>
-            を
-            <span class="strength-emph">安価</span>
-            に取得可能
+            <span class="strength-textBlock">
+              <span class="strength-emph">海外ビジネス</span>に関する
+            </span>
+            <span class="strength-textBlock">
+              <span class="strength-emph">初期的情報</span>
+              を
+            </span>
+            <span class="strength-textBlock">
+              <span class="strength-emph">安価</span>
+              に取得可能
+            </span>
           </div>
           <div class="strength-description">
             <p>
@@ -94,8 +90,10 @@
         <div class="plansWrapper">
 
           <div class="plan">
-            <img class="plan-image" src="~/assets/premade.png">
-            <div class="plan-name">構築済みレポート</div>
+            <div class="plan-header">
+              <img class="plan-image" src="~/assets/premade.png">
+              <div class="plan-name">構築済みレポート</div>
+            </div>
             <div class="plan-description">
               <ul>
                 <li>基本統計情報</li>
@@ -108,8 +106,10 @@
           </div>
 
           <div class="plan">
-            <img class="plan-image" src="~/assets/custommade.png">
-            <div class="plan-name">カスタムレポート</div>
+            <div class="plan-header">
+              <img class="plan-image" src="~/assets/custommade.png">
+              <div class="plan-name">カスタムレポート</div>
+            </div>
             <div class="plan-description">
               <ul>
                 <li>ご希望の海外ビジネス情報をカスタムレポートとしてご提供いたします。</li>
@@ -178,7 +178,7 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 30px;
+  margin: 20px 10px;
 }
 
 .issue {
@@ -285,6 +285,12 @@ p {
   border-radius: 10px;
   box-shadow: 1px 2px 5px #555;
 
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-image {
     width: 100px;
     height: 100px;
@@ -308,12 +314,6 @@ p {
   }
 }
 
-.sp-strength-headline {
-  display: none;
-  font-size: 12pt;
-  text-align: center;
-}
-
 .strength {
   margin-top: 15px;
   height: 100%;
@@ -331,6 +331,10 @@ p {
     font-size: 28pt;
     font-weight: 700;
     color: $primaryDark;
+  }
+
+  &-textBlock {
+    display: inline-block;
   }
 
   &-description {
@@ -416,7 +420,7 @@ p {
 
 .strength {
   &-headline {
-    display: none;
+    font-size: 12pt;
   }
 
   &-emph {
@@ -436,7 +440,6 @@ p {
 .issueList {
   flex-direction: column;
   align-items: center;
-  margin: 30px;
 }
 
 .issue {
@@ -457,6 +460,53 @@ p {
     border-radius: 5px;
     font-size: 9pt;
   }
+}
+
+.plansWrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.plan {
+  max-width: 400px;
+  height: 160px;
+  margin-top: 10px;
+  justify-content: start;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px #555;
+
+  &-header {
+    flex-direction: row;
+  }
+
+  &-image {
+    width: 25px;
+    height: 25px;
+    margin: 15px 10px;
+  }
+
+  &-name {
+    font-weight: 600;
+    font-size: 13pt;
+    color: $primaryDark;
+    margin-bottom: 5px;
+  }
+
+  &-description {
+    width: 80%;
+    font-size: 9pt;
+  }
+
+  &-description li {
+    list-style: '✔ ';
+  }
+}
+
+.googleFormWrapper {
+  height: 1100px;
 }
 
 }
