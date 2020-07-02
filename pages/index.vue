@@ -270,7 +270,7 @@ p {
   height: 80%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-around;
 }
 
 .plan {
@@ -360,8 +360,6 @@ p {
 .googleForm {
   width: 650px;
   height: 1050px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .serviceOverview {
