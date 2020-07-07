@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hero">
-      <img src="~/assets/globe.jpg" class="hero-image">
+      <img src="~/assets/hero5.jpg" class="hero-image">
 
       <div class="hero-imageOverlay">
         <div class="hero-message">
