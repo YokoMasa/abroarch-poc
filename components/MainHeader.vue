@@ -2,7 +2,8 @@
     <div class="headerWrapper">
         <div class="header">
             <div class="header-logo">
-                <span class="header-logo-text">Abroarch</span>
+                <!--<span class="header-logo-text">Abroarch</span>-->
+                <img class="header-logo-image" src="~/assets/logo.png">
             </div>
             <div class="header-menuWrapper">
                 <!--<a href="https://studio.creww.me/projects/22/" class="header-menu" target="_blank">プロジェクトについて</a>-->
@@ -49,6 +50,11 @@ $header-textColor: #333;
             font-size: 22pt;
             font-weight: 700;
             color: $header-textColor;
+        }
+
+        &-image {
+            height: 45%;
+            width: auto;
         }
     }
 
